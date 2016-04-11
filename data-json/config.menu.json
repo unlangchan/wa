@@ -1,0 +1,31 @@
+{
+  "login":{
+     	"TitleMenu":[
+      	   {"name":"InitalStart","class":"timeout","ctr":"loadmenu"},
+      	   {"name":"LoadSave","class":"timeout-200","ctr":"LoadSave"},
+      	   {"name":"SystemSetting","class":"timeout-400","ctr":"SysSet"},
+      	   {"name":"SpecialCpntents","class":"timeout-600","ctr":"loadmenu"},
+      	   {"name":"CloseGame","class":"timeout-800","ctr":"close"}
+      	 ],
+      	 "InitalStart":[
+      	   {"name":"IC","class":"timeout","ctr":"start_IC"},
+      	   {"name":"CC","class":"timeout-200","ctr":"start_CC"},
+      	   {"name":"Coda","class":"timeout-400","ctr":"srart_Coda"},
+      	   {"name":"TitleMenu","class":"timeout-800","ctr":"loadmenu"},
+      	 ],
+      	  "SpecialCpntents":[
+      	   {"name":"DigitalNovel","class":"timeout","ctr":"start_IC"},
+      	   {"name":"CGMode","class":"timeout-200","ctr":"start_CC"},
+      	   {"name":"Coda","class":"timeout-400","ctr":"srart_Coda"},
+      	   {"name":"SceneReplay","class":"timeout-600","ctr":"title_menu"},
+      	   {"name":"SoundMode","class":"timeout-800","ctr":"title_menu"},
+      	   {"name":"VoiceMessage","class":"timeout-1000","ctr":"title_menu"},
+      	   {"name":"TitleMenu","class":"timeout-1200","ctr":"loadmenu"},
+      	 ],
+      	 "DigitalNovel":[
+      	   {"name":"SpecialGiftIC","class":"timeout-200","ctr":"start_CC"},
+      	   {"name":"SpecialGiftCC","class":"timeout-400","ctr":"srart_Coda"},
+      	   {"name":"SpecialCpntents","class":"timeout","ctr":"loadmenu"},
+      	 ]
+    }
+}

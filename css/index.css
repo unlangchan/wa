@@ -1,0 +1,101 @@
+/*=============header===========*/
+.header{
+    background: #FFF;
+}
+.top-title{
+    height: 20px;
+    position: relative;
+    padding: 3px 0 2px;
+    margin-bottom: -1px;
+}
+.top-title .logo-icon{
+    position: absolute;
+    height: 16px;
+    content: url(../source/images/sys/logo.png);
+    margin: 2px 0px 0 5px;
+}
+.top-title .logo-title{
+    margin-left: 27px;
+}
+.top-setting{
+    margin-left: 1px;
+    padding-bottom: 1px;
+}
+.top-setting .setting-nav li{
+    float:left;
+    padding: 0 6px 0px 6px;
+    border: #FFFFFF solid 1px;
+}
+.top-setting .setting-nav li:hover{
+    background: #E5F3FF;
+    border: #CCE8FF solid 1px;
+}
+.top-setting .scr{
+}
+.top-setting .env{}
+.top-setting .sys{}
+.top-setting .menu{}
+/*============= main-sreen  =============*/
+.main-sreen{
+    
+width: 1024px;
+    
+height: 576px;
+    
+position: relative;
+}
+.main-sreen .login{
+     background: url(../source/images/bg/login.jpg) 100%/100%;
+     -webkit-animation: drop-down 1s 1 linear forwards;
+     -webkit-perspective: 100px;
+     height: 100%;
+     padding: 1px;
+}
+.main-sreen .login .logo{
+     position: absolute;
+     width: 594px;
+     height: 349px;
+     left: 50%;
+     margin-left: -297px;
+     background: url(/source/images/animate/logo-login.png) 100%/100%;
+     -webkit-animation: show-opacity 1s 1 linear forwards;
+     -webkit-animation-delay: 0.5s;
+     opacity: 0;
+     z-index: -1;
+}
+.main-sreen .login .menu{
+    
+width: 256px;
+    
+margin: 280px auto 0;
+}
+ .main-sreen .menu li{
+    margin-bottom: 3px;
+    position: relative;
+ }
+.main-sreen .menu li:before {
+   content: "";
+   display: block;
+   position: absolute;
+   height: 100%;
+   width: 100%;
+   background: url(../source/images/btn/T0101.png) 100%/100%;
+   background-position-y: 0%;
+   z-index: -1;
+ }
+ .main-sreen .menu li:hover:before {
+   background-position-y: 92%;
+ }
+ .main-sreen .menu .item{
+     height: 31px;
+     background: url(../source/images/btn/T0100.png) 200%/200%;
+     background-position-y: 0;
+ }
+  .main-sreen .menu .item:hover{
+      background-position-x:100%;
+  }
+/*========= movie =========*/
+.movie video{
+    position:absolute;
+    width:100%;
+}

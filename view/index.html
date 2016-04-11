@@ -1,0 +1,13 @@
+<div class="login" ng-if="login.ready">
+	 <div class="logo"></div>
+	 <div class="menu">
+	 <ul>
+	 	<li ng-repeat="v in list" class="opacity-1" title="{{v.name}}" ng-click="v.ctr()" >
+	 		<div class="item" style="background-position-y:-{{v.pos*31}}px;"></div>
+	 	</li>
+	 </ul>
+	 </div>
+</div>
+<div class="movie" ng-if="movie.ready">
+	<movie ng-src="{{movie.src}}" ng-click="next(loadlogin)" ng-ended="next(loadlogin)"></movie>
+</div>
