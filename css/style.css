@@ -98,7 +98,7 @@ a:active{
   content: '.';
 }
 /*============  main ================*/
-*{/* cursor: default; */}
+*{cursor: default;}
 body{
    background-color: #62007F;
    margin: 5px;

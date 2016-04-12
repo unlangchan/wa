@@ -21,8 +21,6 @@ angular.module('waApp')
 					flakeCount = 0,
 					mX = -100,
 					mY = -100;
-				canvas.width = window.screen.width;
-				canvas.height = window.screen.height;
 
 				(function() {
 					var requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame ||
