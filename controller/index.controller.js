@@ -7,7 +7,7 @@ app.controller('IndexController', ['$scope', '$http', '$filter', '$timeout',
         {name:"LoadSave",pos:"1",ctr:"LoadSave"},
         {name:"SystemSetting",pos:"2",ctr:"SysSet"},
         {name:"SpecialCpntents",pos:"3",ctr:loadmenu},
-        {name:"CloseGame",pos:"4",ctr:function(){window.location.href="about:blank";}}
+        {name:"CloseGame",pos:"4",ctr:closeGame}
       ],
       InitalStart:[
         {name:"IC",pos:"5",ctr:start},
@@ -49,12 +49,16 @@ app.controller('IndexController', ['$scope', '$http', '$filter', '$timeout',
         "/source/video/mv0005.ogv"
       ],
     }
+    $scope.test =function(){
+      console.log($scope.movie.src);
+    }
     function loadmenu() {
       var menu = this.name
       $scope.list = '';
       $timeout(function() {
         $scope.list = $scope.login[menu];
       },500)
+
     }
     function start(){
         var m = $scope.movie;
@@ -64,6 +68,9 @@ app.controller('IndexController', ['$scope', '$http', '$filter', '$timeout',
         l.ready = false;
         m.ready = true;
        $scope.next = $scope.loadlogin;     
+    }
+    function closeGame(){
+      window.location.href="about:blank";
     }
     function init(){
       $scope.next = function(next) {

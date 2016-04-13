@@ -37,12 +37,9 @@
 .top-setting .menu{}
 /*============= main-sreen  =============*/
 .main-sreen{
-    
-width: 1024px;
-    
-height: 576px;
-    
-position: relative;
+    height: 576px;
+    position: relative;
+    overflow: hidden;
 }
 .main-sreen .login{
      background: url(../source/images/bg/login.jpg) 100%/100%;

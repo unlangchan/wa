@@ -18,7 +18,7 @@ module.exports = function (grunt) {
         },
         files: {
           'index.html': [
-               'js/**/angular.**.js',
+               'js/angular.js',
                'js/**/{angular.**,angular-**,*}.js',
                '{app,router}.js',
                '{components,controller}/**/!(*.spec|*.mock).js'

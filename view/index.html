@@ -14,7 +14,7 @@
 <div class="movie" ng-if="movie.ready">
 	<movie ng-src="{{movie.src}}" ng-click="next(loadlogin)" ng-ended="next(loadlogin)"></movie>
 </div>
-<div class="audio">
-     <music src="source/audio/bgm/login.ogg"  loop  autoplay></music>
-     <music src="source/audio/bgm/login.ogg"  loop  autoplay></music>
+<div class="audio" ng-if="login.ready">
+     <!-- <music ng-src="source/audio/bgm/login.ogg"  loop  autoplay></music> -->
+     <voice ng-src="source/audio/bgm/login.ogg"   autoplay></voice>
 </div>
