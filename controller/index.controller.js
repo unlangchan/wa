@@ -1,5 +1,5 @@
-app.controller('IndexController', ['$scope', '$http', '$filter', '$timeout',
-  function($scope, $http, $filter, $timeout) {
+app.controller('IndexController', ['$scope', '$http', '$filter', '$timeout','$compile',
+  function($scope, $http, $filter, $timeout,$compile) {
     $scope.login = {
       ready: false,
       TitleMenu:[
@@ -49,8 +49,18 @@ app.controller('IndexController', ['$scope', '$http', '$filter', '$timeout',
         "/source/video/mv0005.ogv"
       ],
     }
+    $scope.voice={
+      index:0,
+      list:["source/audio/voice/login.ogg","source/audio/voice/1.mp3"]
+    }
     $scope.test =function(){
-      console.log($scope.movie.src);
+        var v = $scope.voice;
+        var voice = '<voice ng-src="' +v.list[v.index]+ '"   autoplay callback="test"></voice>';
+        v.index = ++v.index < v.list.lenth?v.index:0;
+        $scope.movie=false;
+        var html = $compile(voice)($scope);
+        $('.audio').append(html);
+  
     }
     function loadmenu() {
       var menu = this.name
@@ -66,8 +76,8 @@ app.controller('IndexController', ['$scope', '$http', '$filter', '$timeout',
         $scope.list = [];
         m.src=m.list[3];
         l.ready = false;
-        m.ready = true;
-       $scope.next = $scope.loadlogin;     
+        m.ready = true; 
+       $scope.next = $scope.test;     
     }
     function closeGame(){
       window.location.href="about:blank";

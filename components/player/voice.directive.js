@@ -9,7 +9,6 @@ angular.module('waApp')
 	        replace:true,
 	         link: function (scope, element, attributes) {
 	         	scope.next=function(callback){
-	         		console.log(scope);
 	         		angular.element(element[0]).remove();
 	         		(callback || angular.noop)();
 	         	}

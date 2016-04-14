@@ -38,6 +38,6 @@
 .opacity-1.ng-leave.ng-leave-active {
     opacity: 0;
 }
-.login.ng-leave.ng-leave-active{
+.ng-if.ng-leave.ng-leave-active{
      display: none !important;
 }
