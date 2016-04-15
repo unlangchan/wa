@@ -1,5 +1,5 @@
 angular.module('waApp')
-    .directive("music", [function () {
+    .directive("bgm", [function () {
 	    return { 
 	        restrict: 'E', 
 	        template:'<audio></audio>',

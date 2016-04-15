@@ -10,8 +10,9 @@
 	 <div style="position: absolute;top:0;z-index: -1;">
 	 	<snow width="1024" height="576"></snow>
 	 </div>
-	 <music ng-src="source/audio/bgm/login.ogg"  loop  autoplay></music>
+	 <bgm ng-src="source/audio/bgm/login.ogg"  loop  autoplay></bgm>
 </div>
+<div class="plot" ng-if="plot.ready"></div>
 <div class="movie" ng-if="movie.ready">
 	<movie ng-src="{{movie.src}}" ng-click="next(loadlogin)" ng-ended="next(loadlogin)"></movie>
 </div>
